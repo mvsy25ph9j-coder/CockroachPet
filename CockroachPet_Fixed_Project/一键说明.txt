@@ -1,0 +1,28 @@
+# CockroachPet 修正版
+
+这是基于你上传的蟑螂图片制作的 Windows 桌面宠物项目。
+
+## GitHub 自动生成独立 EXE
+
+1. 新建 GitHub 仓库。
+2. 上传本项目所有文件和文件夹，尤其不要漏掉：
+   .github/workflows/build-windows.yml
+   assets/cockroach.png
+3. 打开仓库的 Actions。
+4. 选择 Build CockroachPet Windows EXE。
+5. 点击 Run workflow。
+6. 等待绿色成功。
+7. 在页面底部 Artifacts 下载 CockroachPet-Windows。
+8. 解压后双击 CockroachPet.exe。
+
+生成的 EXE 运行时不需要 Python。
+
+## 如果 EXE 启动失败
+
+程序会尝试在 EXE 所在目录生成 error.log。
+把 error.log 内容发给我即可定位问题。
+
+## 注意
+
+Windows Defender 对未签名的个人 EXE 可能显示“Windows 已保护你的电脑”。
+如果确认文件来自你自己的 GitHub Actions 构建，可选择“更多信息”后运行。
